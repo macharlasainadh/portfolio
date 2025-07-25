@@ -1551,3 +1551,36 @@ span {
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .resume-section, .project-section, .about-section {
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ✅ Responsive Profile Image */
+@media (max-width: 768px) {
+  .profile-container img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-container img {
+    width: 120px;
+    height: 120px;
+  }
+}
