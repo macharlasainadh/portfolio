@@ -252,6 +252,7 @@ section {
 
 .home-img {
     position: relative;
+    left: 100px;
     right: 0;
     width: 45%;
     height: 100%;
@@ -272,7 +273,7 @@ section {
     position: absolute;
     width: 380px;
     height: 380px;
-    background: var(--bg-color);
+    background: blue;/*var(--bg-color);*/
     border-radius: 50%;
 }
 
@@ -1541,4 +1542,12 @@ span {
 /* Add to your styles.css */
 .portfolio-box.hidden {
     display: none;
+}
+
+
+.map-container {
+    background-color: #1a1a2e;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
