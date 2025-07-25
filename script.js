@@ -153,3 +153,19 @@ function handleResumeViewer() {
 // Call on load and resize
 window.addEventListener('load', handleResumeViewer);
 window.addEventListener('resize', handleResumeViewer);
+
+// Hide iframe and show mobile message on small screens
+function adjustResumeViewer() {
+  const resumeViewer = document.querySelector('.resume-viewer');
+  if (window.innerWidth <= 768) {
+    resumeViewer.querySelector('iframe').style.display = 'none';
+    resumeViewer.querySelector('.mobile-fallback').style.display = 'block';
+  } else {
+    resumeViewer.querySelector('iframe').style.display = 'block';
+    resumeViewer.querySelector('.mobile-fallback').style.display = 'none';
+  }
+}
+
+// Run on load and resize
+window.addEventListener('load', adjustResumeViewer);
+window.addEventListener('resize', adjustResumeViewer);

@@ -1683,76 +1683,53 @@ span {
   justify-content: center;
 }
 
-/* MOBILE RESPONSIVENESS FIX */
+/* Resume Section */
+.resume-viewer {
+  width: 100%;
+  height: 80vh;
+  margin-top: 2rem;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.resume-viewer iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.mobile-fallback {
+  display: none;
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-color);
+}
+
+.download-options {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+/* Mobile Layout */
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .home-content {
-    text-align: center;
-    padding: 0 20px;
-  }
-
-  .btn-box {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: center;
-  }
-
-  .btn {
-    width: 80%;
-    max-width: 300px;
-    font-size: 1rem;
-  }
-
-  .home-img {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-
-  .glowing-circle {
-    width: 250px;
-    height: 250px;
-  }
-
-  .glowing-circle .image {
-    width: 100%;
-    height: 100%;
-  }
-
-  .glowing-circle img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-
-  .resume-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 0 20px;
-  }
-
   .resume-viewer iframe {
+    display: none; /* Hide PDF viewer */
+  }
+
+  .mobile-fallback {
+    display: block; /* Show download hint */
+  }
+
+  .download-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .download-options .btn {
     width: 100%;
-    height: 400px;
-  }
-
-  .services-container,
-  .portfolio-container {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .contact-container {
-    flex-direction: column;
-  }
-
-  .home-sci {
-    justify-content: center;
-    gap: 16px;
   }
 }
