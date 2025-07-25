@@ -208,9 +208,11 @@ section {
 .home-sci {
     position: absolute;
     bottom: 4rem;
-    width: 170px;
+    /*width: 170px;*/
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
 }
 
 .home-sci a {
@@ -273,7 +275,7 @@ section {
     position: absolute;
     width: 380px;
     height: 380px;
-    background: blue;/*var(--bg-color);*/
+    background: var(--bg-color);
     border-radius: 50%;
 }
 
@@ -1679,4 +1681,78 @@ span {
 .mobile-download-options .btn {
   width: 100%;
   justify-content: center;
+}
+
+/* MOBILE RESPONSIVENESS FIX */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-content {
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .btn-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .btn {
+    width: 80%;
+    max-width: 300px;
+    font-size: 1rem;
+  }
+
+  .home-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .glowing-circle {
+    width: 250px;
+    height: 250px;
+  }
+
+  .glowing-circle .image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .glowing-circle img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .resume-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .resume-viewer iframe {
+    width: 100%;
+    height: 400px;
+  }
+
+  .services-container,
+  .portfolio-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .home-sci {
+    justify-content: center;
+    gap: 16px;
+  }
 }
