@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Carter | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="header">
+        <a href="#" class="logo">Alex.</a>
+        
+        <nav class="navbar">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#resume">Resume</a> <!-- Added -->
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+</nav>
+        
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm Alex Carter</h1>
+            <h3>Frontend Developer</h3>
+            <p>I build exceptional digital experiences that are fast, accessible, and visually appealing. Let's create something amazing together.</p>
+            <div class="btn-box">
+                <a href="#contact" class="btn">Hire Me</a>
+                <a href="#about" class="btn">Learn More</a>
+            </div>
+        </div>
+        
+        <div class="home-sci">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        
+        <div class="home-img">
+            <div class="glowing-circle">
+                <span></span>
+                <span></span>
+                <div class="image">
+                    <img src="https://via.placeholder.com/400x400" alt="Profile Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="https://via.placeholder.com/400x500" alt="About Image">
+        </div>
+        
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend Developer</h3>
+            <p>With over 5 years of experience in web development, I specialize in creating responsive, user-friendly websites and applications. My passion lies in crafting clean, efficient code and designing intuitive user interfaces that deliver exceptional user experiences.</p>
+            
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            
+            <div class="tab-contents active-tab" id="skills">
+                <div class="skills-container">
+                    <div class="skill">
+                        <i class="devicon-html5-plain colored"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill">
+                        <i class="devicon-css3-plain colored"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill">
+                        <i class="devicon-react-original colored"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="skill">
+                        <i class="devicon-nodejs-plain colored"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill">
+                        <i class="devicon-git-plain colored"></i>
+                        <span>Git</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li>
+                        <span>2021 - Present</span>
+                        <h3>Senior Frontend Developer - TechSolutions Inc.</h3>
+                        <p>Lead the frontend development team, implemented React architecture, improved performance by 40%.</p>
+                    </li>
+                    <li>
+                        <span>2019 - 2021</span>
+                        <h3>Frontend Developer - WebCraft Studios</h3>
+                        <p>Developed responsive websites and web applications for various clients across industries.</p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li>
+                        <span>2015 - 2019</span>
+                        <h3>BSc in Computer Science - State University</h3>
+                        <p>Graduated with honors, specialized in Human-Computer Interaction.</p>
+                    </li>
+                    <li>
+                        <span>2019</span>
+                        <h3>Advanced JavaScript - Udemy</h3>
+                        <p>Completed comprehensive course on modern JavaScript techniques.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+        
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Custom website development with clean, maintainable code and responsive design principles.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            
+            <div class="services-box">
+                <i class="fas fa-paint-brush"></i>
+                <h3>UI/UX Design</h3>
+                <p>User-centered design approach creating intuitive interfaces that enhance user experience.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            
+            <div class="services-box">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>App Development</h3>
+                <p>Building cross-platform mobile applications with React Native for consistent performance.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="https://via.placeholder.com/600x400" alt="Project 1">
+                <div class="portfolio-layer">
+                    <h4>E-commerce Platform</h4>
+                    <p>Full-featured online store with cart functionality and payment integration.</p>
+                    <div class="tech-used">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            
+            <div class="portfolio-box">
+                <img src="https://via.placeholder.com/600x400" alt="Project 2">
+                <div class="portfolio-layer">
+                    <h4>Task Management App</h4>
+                    <p>Productivity application with drag-and-drop interface and team collaboration.</p>
+                    <div class="tech-used">
+                        <span>Vue.js</span>
+                        <span>Firebase</span>
+                    </div>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            
+            <div class="portfolio-box">
+                <img src="https://via.placeholder.com/600x400" alt="Project 3">
+                <div class="portfolio-layer">
+                    <h4>Health & Fitness Tracker</h4>
+                    <p>Mobile app for tracking workouts, nutrition, and health metrics.</p>
+                    <div class="tech-used">
+                        <span>React Native</span>
+                        <span>GraphQL</span>
+                    </div>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            
+            <div class="portfolio-box">
+                <img src="https://via.placeholder.com/600x400" alt="Project 4">
+                <div class="portfolio-layer">
+                    <h4>Corporate Website</h4>
+                    <p>Modern, responsive website for a financial services company.</p>
+                    <div class="tech-used">
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="btn-box">
+            <a href="#" class="btn">View All Projects</a>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <!-- Resume Section -->
+<section class="resume" id="resume">
+    <h2 class="heading">My <span>Resume</span></h2>
+    
+    <div class="resume-container">
+        <!-- ADD YOUR DOWNLOAD OPTIONS HERE -->
+        <div class="download-options">
+            <a href="resume.pdf" download class="btn">
+                <i class="fas fa-file-pdf"></i> PDF Version
+            </a>
+            <a href="resume.docx" download class="btn">
+                <i class="fas fa-file-word"></i> DOCX Version
+            </a>
+        </div>
+        
+        <div class="resume-viewer">
+            <iframe src="resume.pdf#view=fitH" frameborder="0"></iframe>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+<section class="contact" id="contact">
+    <h2 class="heading">Get In <span>Touch</span></h2>
+    <p class="contact-subtitle">Interested in working together? Let's discuss your project.</p>
+    
+    <div class="contact-container">
+        <!-- Contact Form -->
+        <form class="contact-form" id="contact-form">
+            <div class="input-group">
+                <input type="text" id="name" required>
+                <label for="name">Full Name</label>
+                <span class="highlight"></span>
+            </div>
+            
+            <div class="input-group">
+                <input type="email" id="email" required>
+                <label for="email">Email Address</label>
+                <span class="highlight"></span>
+            </div>
+            
+            <div class="input-group">
+                <input type="text" id="subject" required>
+                <label for="subject">Subject</label>
+                <span class="highlight"></span>
+            </div>
+            
+            <div class="input-group">
+                <textarea id="message" required></textarea>
+                <label for="message">Your Message</label>
+                <span class="highlight"></span>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+        </form>
+        
+        <!-- Contact Info Card (Right Side) -->
+        <div class="contact-info">
+            <div class="info-card">
+                <i class="fas fa-envelope"></i>
+                <h3>Email Me</h3>
+                <a href="mailto:contact@yourdomain.com">contact@yourdomain.com</a>
+            </div>
+            
+            <div class="info-card">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Call Me</h3>
+                <a href="tel:+1234567890">+1 (234) 567-890</a>
+            </div>
+            
+            <div class="info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Location</h3>
+                <p>San Francisco, CA</p>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    function initMap() {
+        // ... the map initialization code above ...
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
+<!-- Your existing scripts -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="script.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Alex Carter | All Rights Reserved.</p>
+        </div>
+        
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script src="script.js"></script>
+    <!-- Add before </body> -->
+<div id="particles-js"></div>
+
+<!-- Add to CSS -->
+
+<!-- Add this script -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+  particlesJS.load('particles-js', 'particles.json', function() {
+    console.log('Particles loaded!');
+  });
+</script>
+
+</body>
+</html>
