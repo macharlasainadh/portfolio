@@ -129,3 +129,27 @@ document.addEventListener('DOMContentLoaded', function() {
         this.textContent = showingAll ? 'Show Less' : 'View All Projects';
     });
 });
+
+// Update this in script.js
+function handleResumeViewer() {
+  const resumeViewer = document.querySelector('.resume-viewer');
+  if (window.innerWidth < 768 && resumeViewer) {
+    resumeViewer.innerHTML = `
+      <div class="mobile-resume-fallback">
+        <p>For best experience, please download the resume:</p>
+        <div class="mobile-download-options">
+          <a href="resume.pdf" download class="btn">
+            <i class="fas fa-file-pdf"></i> PDF Version
+          </a>
+          <a href="resume.docx" download class="btn">
+            <i class="fas fa-file-word"></i> DOCX Version
+          </a>
+        </div>
+      </div>
+    `;
+  }
+}
+
+// Call on load and resize
+window.addEventListener('load', handleResumeViewer);
+window.addEventListener('resize', handleResumeViewer);

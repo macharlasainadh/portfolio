@@ -1584,3 +1584,99 @@ span {
     height: 120px;
   }
 }
+
+@media (max-width: 768px) {
+  .home-img {
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 3rem auto;
+    order: -1; /* Moves image above text on mobile */
+  }
+
+  .glowing-circle::after {
+    width: 280px;
+    height: 280px;
+  }
+
+  .glowing-circle .image {
+    width: 280px;
+    height: 280px;
+  }
+}
+@media (max-width: 768px) {
+  .resume-viewer {
+    height: 60vh;
+  }
+
+  .resume-viewer iframe {
+    display: none; /* Hide iframe on mobile */
+  }
+
+  .resume-viewer::after {
+    content: "For best experience, please download the resume";
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-color);
+  }
+
+  .download-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .download-options .btn {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 8rem;
+  }
+
+  .home-content {
+    order: 2;
+    margin-top: 3rem;
+  }
+
+  .home-sci {
+    position: relative;
+    bottom: auto;
+    width: 100%;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  .btn-box {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-box .btn {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+.mobile-resume-fallback {
+  padding: 2rem;
+  text-align: center;
+}
+
+.mobile-download-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.mobile-download-options .btn {
+  width: 100%;
+  justify-content: center;
+}
