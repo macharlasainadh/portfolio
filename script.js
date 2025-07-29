@@ -169,3 +169,26 @@ function adjustResumeViewer() {
 // Run on load and resize
 window.addEventListener('load', adjustResumeViewer);
 window.addEventListener('resize', adjustResumeViewer);
+
+// Add this if you want users to dismiss the banner
+document.querySelector('.construction-banner').addEventListener('click', function() {
+  this.style.display = 'none';
+});
+
+
+document.querySelector('.close-btn').addEventListener('click', function() {
+  const banner = document.querySelector('.construction-banner');
+  banner.style.display = 'none';
+  document.body.classList.add('banner-closed');
+  
+  // Optional: Store closed state in localStorage
+  localStorage.setItem('bannerClosed', 'true');
+});
+
+// Optional: Check localStorage on page load
+window.addEventListener('DOMContentLoaded', function() {
+  if (localStorage.getItem('bannerClosed') === 'true') {
+    document.querySelector('.construction-banner').style.display = 'none';
+    document.body.classList.add('banner-closed');
+  }
+});
