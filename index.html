@@ -257,8 +257,8 @@
         <div class="contact-container">
             
             
-            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
-                <input type="hidden" name="bot-field" style="display: none;">
+            <form name="contact" netlify netlify-honeypot="bot-field" action="/success.html" method="POST">
+                <input type="hidden" name="bot-field" style="display:none">
                 
                 <div class="input-group">
                     <input type="text" id="name" name="name" required>  <!-- Added name="name" -->
@@ -342,5 +342,14 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
+    <script>
+    // Fix for Netlify Forms + SPA redirect
+    document.querySelector('form[data-netlify="true"]')?.addEventListener('submit', (e) => {
+        const form = e.target;
+        setTimeout(() => {
+            window.location.href = form.getAttribute('action');
+        }, 1000); // Short delay to ensure Netlify captures data
+    });
+    </script>
 </body>
 </html>
