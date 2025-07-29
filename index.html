@@ -257,30 +257,29 @@
         <div class="contact-container">
             
             
-            <form action="https://formsubmit.co/macharlasainadh2@gmail.com" method="POST" class="contact-form">
-  <input type="hidden" name="_subject" value="New Portfolio Message!">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="https://yourportfolio.com/thank-you.html">
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
+                <input type="hidden" name="bot-field" style="display: none;">
+                
                 <div class="input-group">
-                    <input type="text" id="name" required>
+                    <input type="text" id="name" name="name" required>  <!-- Added name="name" -->
                     <label for="name">Full Name</label>
                     <span class="highlight"></span>
                 </div>
                 
                 <div class="input-group">
-                    <input type="email" id="email" required>
+                    <input type="email" id="email" name="email" required>  <!-- Added name="email" -->
                     <label for="email">Email Address</label>
                     <span class="highlight"></span>
                 </div>
                 
                 <div class="input-group">
-                    <input type="text" id="subject" required>
+                    <input type="text" id="subject" name="subject" required>  <!-- Added name="subject" -->
                     <label for="subject">Subject</label>
                     <span class="highlight"></span>
                 </div>
                 
                 <div class="input-group">
-                    <textarea id="message" required></textarea>
+                    <textarea id="message" name="message" required></textarea>  <!-- Added name="message" -->
                     <label for="message">Your Message</label>
                     <span class="highlight"></span>
                 </div>
@@ -289,7 +288,7 @@
                     <i class="fas fa-paper-plane"></i> Send Message
                 </button>
             </form>
-            
+                        
             <div class="contact-info">
                 <div class="info-card">
                     <i class="fas fa-envelope"></i>
