@@ -1141,7 +1141,11 @@ span {
   z-index: -1;
 }
 
-
+@media (max-width: 480px) {
+  .resume-viewer {
+    display: none;
+  }
+  
   .mobile-resume-alert {
     display: block;
     text-align: center;
@@ -1150,7 +1154,7 @@ span {
     border-radius: 0.8rem;
     margin-top: 2rem;
   }
-
+}
 
 .download-options a.btn {
   position: relative;
@@ -1731,24 +1735,3 @@ span {
 }
 
 
-/* Show only on mobile */
-.desktop-resume { display: none; }
-
-@media (max-width: 768px) {
-  .desktop-resume { display: block; }
-  .mobile-resume-btn {
-    display: inline-block;
-    padding: 12px 24px;
-    background: #0ef;
-    color: #1f242d;
-    margin: 15px 0;
-  }
-}
-
-@media (max-width: 768px) {
-  a.btn {
-    min-width: 140px !important;
-    padding: 12px 24px !important;
-    font-size: 16px !important;
-  }
-}
